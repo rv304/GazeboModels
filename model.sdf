@@ -1,0 +1,139 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name="robot">
+ <static>true</static>
+          <link name='right leg'>
+           <pose>0 0 0.3 0 0 0</pose>
+
+            <collision name='collision'>
+              <geometry>
+                <cylinder>
+                  <radius>.1</radius>
+		  <length>.6</length>
+                </cylinder>
+              </geometry>
+            </collision>
+
+            <visual name='visual'>
+             <geometry>
+                <cylinder>
+                  <radius>.1</radius>
+		  <length>.6</length>
+                </cylinder>
+              </geometry>
+            </visual>
+          </link>
+
+<link name='body'>
+           <pose>0 0.25 1 0 0 0</pose>
+
+            <collision name='collision'>
+              <geometry>
+                <box>
+                  <size>0.5 0.8 0.8</size>
+                </box>
+              </geometry>
+            </collision>
+
+            <visual name='visual'>
+            <geometry>
+                <box>
+                  <size>0.5 0.8 0.8</size>
+                </box>
+              </geometry>
+            </visual>
+          </link>
+
+<link name='right hand'>
+           <pose>0 -0.25 1.1 0 0 0</pose>
+
+            <collision name='collision'>
+              <geometry>
+                <cylinder>
+                  <radius>.1</radius>
+		  <length>.6</length>
+                </cylinder>
+              </geometry>
+            </collision>
+
+            <visual name='visual'>
+            <geometry>
+                <cylinder>
+                  <radius>.1</radius>
+		  <length>.6</length>
+                </cylinder>
+              </geometry>
+            </visual>
+          </link>
+
+<link name='left hand'>
+           <pose>0.1 0.75 1.1 0 0 0</pose>
+
+            <collision name='collision'>
+              <geometry>
+                <cylinder>
+                  <radius>.1</radius>
+		  <length>.6</length>
+                </cylinder>
+              </geometry>
+            </collision>
+
+            <visual name='visual'>
+            <geometry>
+                <cylinder>
+                  <radius>.1</radius>
+		  <length>.6</length>
+                </cylinder>
+              </geometry>
+            </visual>
+          </link>
+
+<link name='head'>
+           <pose>0 0.25 1.8 0 0 0</pose>
+
+            <collision name='collision'>
+              <geometry>
+                
+<sphere>
+<radius>.4</radius>
+</sphere>
+              </geometry>
+            </collision>
+
+            <visual name='visual'>
+            <geometry>
+                <sphere>
+<radius>.4</radius>
+</sphere>
+              </geometry>
+            </visual>
+          </link>
+
+
+
+
+
+
+ <link name='left leg'>
+            <pose>0 0.5 0.3 0 0 0</pose>
+
+            <collision name='collision'>
+              <geometry>
+                <cylinder>
+                  <radius>.1</radius>
+		  <length>.6</length>
+                </cylinder>
+              </geometry>
+            </collision>
+
+            <visual name='visual'>
+             <geometry>
+                <cylinder>
+                  <radius>.1</radius>
+		  <length>.6</length>
+                </cylinder>
+              </geometry>
+            </visual>
+          </link>
+  </model>
+</sdf>
